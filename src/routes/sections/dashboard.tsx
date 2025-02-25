@@ -27,11 +27,6 @@ const StatisticsDetailPage = lazy(() => import('src/pages/Reward/Statistics/Deta
 // ----------------------------------------------------------------------
 
 // ----------------------------------------------------------------------
-const ResourcePage = lazy(() => import('src/pages/Resource/List'));
-const ResourceDetailPage = lazy(() => import('src/pages/Resource/Detail'));
-// ----------------------------------------------------------------------
-
-// ----------------------------------------------------------------------
 const PlacementListPage = lazy(() => import('src/pages/Placement/List'));
 // ----------------------------------------------------------------------
 
