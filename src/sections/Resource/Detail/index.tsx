@@ -50,14 +50,6 @@ export default function Detail() {
 
   const renderContent = (
     <DashboardContent>
-      <Breadcrumbs
-        heading="Resources"
-        links={[{ name: 'Resources', href: '#' }, { name: current.title }]}
-        sx={{
-          mb: { xs: 2, md: 3 },
-        }}
-      />
-
       <BackToTop />
 
       <Stack>
