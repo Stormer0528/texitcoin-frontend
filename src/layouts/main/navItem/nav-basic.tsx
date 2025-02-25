@@ -27,6 +27,10 @@ export function NavBasic() {
       path: paths.pages.contact.root,
     },
     {
+      title: 'Resource',
+      path: paths.pages.resource.root,
+    },
+    {
       title: 'Dashboard',
       path: token ? paths.dashboard.history.root : paths.pages.statistics.root,
     },

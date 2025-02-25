@@ -68,6 +68,9 @@ export const paths = {
 
     // STATISTICS
     statistics: { root: ROOTS.STATISTICS },
+
+    // RESOURCES
+    resource: { root: ROOTS.RESOURCE, view: (slug: string) => `${ROOTS.RESOURCE}/${slug}` },
   },
 
   // DASHBOARD
@@ -91,7 +94,6 @@ export const paths = {
     sponsor: { root: ROOTS.SPONSOR },
     placement: { root: ROOTS.PLACEMENT },
     commission: { root: ROOTS.COMMISSION },
-    resource: { root: ROOTS.RESOURCE, view: (slug: string) => `${ROOTS.RESOURCE}/${slug}` },
     profile: {
       root: ROOTS.PROFILE,
     },

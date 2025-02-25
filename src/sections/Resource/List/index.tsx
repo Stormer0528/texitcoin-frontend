@@ -11,8 +11,6 @@ import { client } from 'src/utils/sanity/client';
 import { CONFIG } from 'src/config';
 import { DashboardContent } from 'src/layouts/dashboard';
 
-import { Breadcrumbs } from 'src/components/Breadcrumbs';
-
 import Item from './item';
 import HowTo from './HowTo';
 import Mission from './Mission';
@@ -49,14 +47,6 @@ export default function Resource() {
       </Helmet>
 
       <DashboardContent>
-        <Breadcrumbs
-          heading="Resources"
-          links={[{ name: 'Resources', href: '#' }, { name: 'list' }]}
-          sx={{
-            mb: { xs: 2, md: 3 },
-          }}
-        />
-
         <Tabs value={tabs.value} onChange={tabs.onChange} sx={{ mb: { xs: 2, md: 3 } }}>
           {[...initial, ...TABS].map((tab) => (
             <Tab key={tab.value} label={tab.label} value={tab.value} />

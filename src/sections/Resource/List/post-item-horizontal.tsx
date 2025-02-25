@@ -42,7 +42,7 @@ export function PostItemHorizontal({ post, urlFor }: Props) {
           <Link
             component={RouterLink}
             variant="body2"
-            href={paths.dashboard.resource.view(slug.current)}
+            href={paths.pages.resource.view(slug.current)}
           >
             Read more
           </Link>

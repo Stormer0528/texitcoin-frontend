@@ -103,13 +103,13 @@ export const dashboardRoutes = [
         path: 'commission',
         children: [{ index: true, element: <CommissionListPage /> }],
       },
-      {
-        path: 'resource',
-        children: [
-          { index: true, element: <ResourcePage /> },
-          { path: ':slug', children: [{ index: true, element: <ResourceDetailPage /> }] },
-        ],
-      },
+      // {
+      //   path: 'resource',
+      //   children: [
+      //     { index: true, element: <ResourcePage /> },
+      //     { path: ':slug', children: [{ index: true, element: <ResourceDetailPage /> }] },
+      //   ],
+      // },
       { path: 'profile', element: <ProfilePage /> },
       {
         path: 'notifications',

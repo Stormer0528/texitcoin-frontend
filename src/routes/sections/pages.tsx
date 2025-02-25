@@ -17,6 +17,8 @@ const IntroductionPage = lazy(() => import('src/pages/Introduction'));
 const RapidRewardsPage = lazy(() => import('src/pages/RapidRewards'));
 const SilverGuaranteePage = lazy(() => import('src/pages/SilverGuarantee'));
 const RewardDetailPage = lazy(() => import('src/pages/MemberStatistics/List'));
+const ResourcePage = lazy(() => import('src/pages/Resource/List'));
+const ResourceDetailPage = lazy(() => import('src/pages/Resource/Detail'));
 // ----------------------------------------------------------------------
 
 export const statisticsRoutes: RouteObject[] = [
@@ -36,6 +38,13 @@ export const statisticsRoutes: RouteObject[] = [
       { path: 'rapid-rewards', element: <RapidRewardsPage /> },
       { path: 'silverbugs', element: <SilverGuaranteePage /> },
       { path: 'contact', element: <ContactPage /> },
+      {
+        path: 'resource',
+        children: [
+          { index: true, element: <ResourcePage /> },
+          { path: ':slug', children: [{ index: true, element: <ResourceDetailPage /> }] },
+        ],
+      },
     ],
   },
   {
